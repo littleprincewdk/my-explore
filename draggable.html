@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        img{
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -o-user-select:none;
+            user-select:none;
+        }
+        #drag
+        {
+            position:relative;
+            left:100px;
+            top:20px;
+            overflow:hidden;
+            width:400px;
+            height:400px;
+            border:solid red 1px;
+        }
+        #resize{
+            width:400px;
+            height:400px;
+            border:solid red 1px;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="drag"><img src="Img/girl.jpg"/></div>-->
+<div id="resize"></div>
+<script type="text/javascript" src="Plugin/jquery.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="Plugin/my/draggable/draggable.js"></script>
+<script type="text/javascript" src="Plugin/my/resizeable/resizeable.js"></script>
+<script>
+    $(function(){
+        $("#resize").myResizeable();
+    })
+</script>
+</body>
+</html>

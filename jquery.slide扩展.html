@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!--css-->
+    <link  rel="stylesheet" href="Plugin/bootstrap/css/bootstrap.min.css"/>
+    <link  rel="stylesheet" href="Plugin/font-awesome/css/font-awesome.min.css"/>
+    <style type="text/css">
+        .btn-group{
+            margin:30px 0 30px 320px;
+        }
+        .wrap{
+        }
+        .wrap ul{
+            padding:0;
+        }
+        .wrap ul li{
+            list-style: none;
+        }
+        img{
+            width:1366px;
+        }
+    </style>
+</head>
+<body>
+<div class="btn-group">
+    <button class="btn btn-success">slideHOpen</button>
+    <button class="btn btn-warning">slideHClose</button>
+    <button class="btn btn-success">slideHDrawerOpen</button>
+    <button class="btn btn-warning">slideHDrawerClose</button>
+    <button class="btn btn-success">slideVOpen</button>
+    <button class="btn btn-warning">slideVClose</button>
+    <button class="btn btn-success">slideHVOpen</button>
+    <button class="btn btn-warning">slideHVClose</button>
+</div>
+<div class="wrap">
+    <ul>
+        <li><img src="Img/站庆1.jpg"></li>
+    </ul>
+</div>
+<!--js-->
+<script type="text/javascript" src="Plugin/jquery.min.js"></script>
+<script type="text/javascript" src="Plugin/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="Plugin/my/slide/slide.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("button:contains('slideHOpen')").click(function(){
+            $(".wrap").slideHOpen(2000);
+        });
+        $("button:contains('slideHClose')").click(function(){
+            $(".wrap").slideHClose(2000);
+        });
+        $("button:contains('slideHDrawerOpen')").click(function(){
+            $(".wrap").slideHDrawerOpen(2000);
+        });
+        $("button:contains('slideHDrawerClose')").click(function(){
+            $(".wrap").slideHDrawerClose(2000);
+        });
+        $("button:contains('slideVOpen')").click(function(){
+            $(".wrap").slideVOpen(2000);
+        });
+        $("button:contains('slideVClose')").click(function(){
+            $(".wrap").slideVClose(2000);
+        });
+        $("button:contains('slideHVOpen')").click(function(){
+            $(".wrap").slideHVOpen(3000,5000);
+        });
+        $("button:contains('slideHVClose')").click(function(){
+            $(".wrap").slideHVClose(3000,5000);
+        });
+    });
+</script>
+</body>
+</html>

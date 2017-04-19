@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link  rel="stylesheet" href="Plugin/bootstrap/css/bootstrap.min.css"/>
+    <link  rel="stylesheet" href="Plugin/font-awesome/css/font-awesome.min.css"/>
+    <link  rel="stylesheet" href="Plugin/my/ImgViewer/imgviewer.css"/>
+</head>
+<body>
+<div class="imgViewer-wrap">
+    <ul class="imgViewer clearfix">
+        <li><img src="Img/站庆1.jpg"></li>
+        <li><img src="Img/站庆2.jpg"></li>
+        <li><img src="Img/站庆3.jpg"></li>
+        <li><img src="Img/banner.png"></li>
+    </ul>
+</div>
+<a id="next" href="#">next</a>
+<script type="text/javascript" src="Plugin/jquery.min.js"></script>
+<!--<script type="text/javascript" src="Plugin/bootstrap/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="Plugin/my/ImgViewer/imgviewer.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".imgViewer").ImgViewer({
+            speed:"500",
+            autoScroll:true,
+            interval:"2000",
+            initImg:"1",
+            navigator:true,
+            navigatorBtn:true,
+            navigatorStyle:"circle"
+        });
+    })
+</script>
+</body>
+</html>

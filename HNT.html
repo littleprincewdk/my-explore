@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Css/hanoitower.css">
+    <script src="Plugin/jquery.min.js"></script>
+    <script src="Js/hnt.js"></script>
+</head>
+<body>
+<h1 class="title">hanoitower汉诺塔演示</h1>
+<div class="setting">
+    <strong>阶数</strong><input id="order" type="number" max="10" min="3" value="4">
+    <strong>速度</strong><input id="speed" type="number" max="3000" min="500" step="100" value="1000">
+    <input id="start" type="submit" value="start"><br>
+</div>
+<div class="progress">
+    <div class="progress-title">过程</div>
+    <p class="progress-body"></p>
+    <div class="progress-footer">0/0</div>
+</div>
+<div class="tower">
+    <div class="foundation"></div>
+    <div class="foundation"></div>
+    <div class="foundation"></div>
+    <div class="pole"></div>
+    <div class="pole"></div>
+    <div class="pole"></div>
+</div>
+<div class="start">G O</div>
+<div class="end">END</div>
+</body>
+</html>

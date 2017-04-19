@@ -1,0 +1,108 @@
+
+/*图片廊*/
+.imgViewer-wrap{
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+.imgViewer{
+    width:600%;
+    height:100%;
+    position:relative;
+    margin:0;
+    padding:0;
+}
+.imgViewer li{
+    width:100%;
+    height:100%;
+    list-style: none;
+    float:left;
+    background-color: darkgrey;
+}
+.imgViewer li img{
+    width:100%;
+    height:100%;
+    display:none;
+}
+.imgViewer li div{
+    width:100%;
+    height:100%;
+    display:none;
+}
+/*导航按钮*/
+.imgViewer-nextImg{
+    position:absolute;
+    top:40%;
+    right:5%;
+    background-color: rgba(84,127,233,0.3);
+}
+.imgViewer-nextImg:hover{
+    background-color: rgba(84,127,233,0.8);
+}
+.imgViewer-nextImg i{
+    font-size:2.0em;
+    color:rgba(204,217,248,0.3);
+}
+.imgViewer-prevImg{
+    position:absolute;
+    top:40%;
+    left:5%;
+    background-color: rgba(84,127,233,0.3);
+}
+.imgViewer-prevImg:hover{
+    background-color: rgba(84,127,233,0.8);
+}
+.imgViewer-prevImg i{
+    font-size:2.0em;
+    color:rgba(204,217,248,0.3);
+}
+/*导航图片*/
+.imgViewer-nav-smallImg{
+    position:absolute;
+    bottom:0;
+    text-align: right;
+}
+.imgViewer-nav-smallImg ul{
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+.imgViewer-nav-smallImg ul li{
+    width:10%;
+    margin:10px;
+    display:inline-block;
+}
+.imgViewer-nav-smallImg ul li img{
+    width:100%;
+}
+.outImg{
+    border-radius:15px;
+    box-shadow: 0 0 10px blue;
+}
+/*导航circle*/
+.imgViewer-nav-circle{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    text-align: center;
+}
+.imgViewer-nav-circle ul{
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+.imgViewer-nav-circle ul li{
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin:20px;
+}
+.imgViewer-nav-circle ul li a{
+    display:block;
+    height:100%;
+    border-radius:12.5px;
+    border:solid rgba(100, 54, 255, 0.5) 5px;
+    background:radial-gradient(rgba(255,255,255,0.1), rgba(84, 127, 233, 0.3), rgba(255,255,255,0.1));
+
+}

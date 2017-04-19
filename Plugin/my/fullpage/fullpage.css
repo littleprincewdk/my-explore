@@ -1,0 +1,8 @@
+.my-fullpage{
+    width:100%;
+    position:relative;
+}
+.my-fullpage>.my-section{
+    width:100%;
+    height:100%;
+}

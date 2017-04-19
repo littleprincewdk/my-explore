@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fullpage</title>
+    <link rel="stylesheet" href="Plugin/my/fullpage/fullpage.css">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="my-fullpage">
+    <div style="background-color:#78ff35;" class="my-section">1</div>
+    <div style="background-color:#ffee5f;" class="my-section">2</div>
+    <div style="background-color:#ff2d74;" class="my-section">3</div>
+    <div style="background-color:#3d2fff;" class="my-section">4</div>
+</div>
+
+<script type="text/javascript" src="Plugin/jquery.min.js"></script>
+<script type="text/javascript" src="Plugin/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="Plugin/my/fullpage/fullpage.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".my-fullpage").fullpage();
+    })
+</script>
+</body>
+</html>
